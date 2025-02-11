@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailsViewController" customModule="BostaTask" customModuleProvider="target">
+            <connections>
+                <outlet property="albumImage" destination="o6W-pD-aHf" id="LUc-xN-Qp5"/>
+                <outlet property="contentScrollView" destination="rle-ig-FKx" id="zGa-d5-fMa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="50" translatesAutoresizingMaskIntoConstraints="NO" id="rle-ig-FKx">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6W-pD-aHf">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="leading" secondItem="0vl-JD-Pb1" secondAttribute="leading" id="5QR-Sk-R9P"/>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="bottom" secondItem="0vl-JD-Pb1" secondAttribute="bottom" id="CLV-ph-aMk"/>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="top" secondItem="0vl-JD-Pb1" secondAttribute="top" id="Pvu-Xf-9On"/>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="trailing" secondItem="0vl-JD-Pb1" secondAttribute="trailing" id="TtB-fd-6nX"/>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="width" secondItem="1oC-TY-wV0" secondAttribute="width" id="UfM-Oy-9NM"/>
+                        <constraint firstItem="o6W-pD-aHf" firstAttribute="height" secondItem="1oC-TY-wV0" secondAttribute="height" id="mTJ-SV-vJq"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="0vl-JD-Pb1"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="1oC-TY-wV0"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rle-ig-FKx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A83-sz-bF9"/>
+                <constraint firstItem="rle-ig-FKx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="APe-jA-HRg"/>
+                <constraint firstAttribute="bottom" secondItem="rle-ig-FKx" secondAttribute="bottom" id="Nuo-GS-0Uj"/>
+                <constraint firstItem="rle-ig-FKx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wLt-PA-Hlq"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
